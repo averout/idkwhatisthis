@@ -1,0 +1,13 @@
+body { font-family: Verdana, Arial, sans-serif; background: #f5f5f5; color: #333; }
+.app { max-width: 520px; margin: 40px auto; background: #fff; padding: 25px; border-radius: 8px; }
+h1 { color: #1f3864; font-size: 26px; margin-bottom: 20px; }
+.form { display: flex; gap: 10px; }
+#task-input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 15px; }
+#add-button { padding: 10px 20px; background: #1f3864; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+.error { color: #c1121f; margin-top: 10px; }
+.list { list-style: none; padding: 0; margin: 20px 0; }
+.list__item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; }
+.list__text { flex: 1; }
+.list__item--done .list__text { text-decoration: line-through; color: #999; }
+.list__delete { background: none; border: 1px solid #ccc; border-radius: 4px; padding: 4px 10px; cursor: pointer; }
+.counter { color: #666; font-size: 14px; }

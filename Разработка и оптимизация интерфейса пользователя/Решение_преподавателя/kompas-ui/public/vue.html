@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Компас — каталог туров (Vue)</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Подключаем фреймворк Vue из папки vendor -->
+  <script src="vendor/vue.global.prod.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">КОМПАС <span>туры по России</span></div>
+  </header>
+
+  <!-- Всё, что внутри элемента с id="app", будет управляться Vue -->
+  <main class="page" id="app">
+    <h1>Каталог туров (Vue)</h1>
+
+    <div class="filters">
+      <input v-model="search" type="text" placeholder="Поиск по названию">
+      <select v-model="region">
+        <option value="">Все регионы</option>
+        <option value="Сибирь">Сибирь</option>
+        <option value="Поволжье">Поволжье</option>
+        <option value="Север">Север</option>
+        <option value="Юг">Юг</option>
+        <option value="Дальний Восток">Дальний Восток</option>
+        <option value="Урал">Урал</option>
+      </select>
+      <label class="check"><input v-model="onlyCheap" type="checkbox"> до 20 000 ₽</label>
+      <select v-model="sort">
+        <option value="">Без сортировки</option>
+        <option value="asc">Сначала дешёвые</option>
+        <option value="desc">Сначала дорогие</option>
+      </select>
+    </div>
+
+    <p class="count">Найдено туров: {{ filtered.length }}</p>
+
+    <div class="list">
+      <article v-for="tour in filtered" :key="tour.id" class="card">
+        <img :src="tour.imageSmall" :alt="tour.title"
+             width="600" height="400" loading="lazy" decoding="async">
+        <div class="card__body">
+          <h3 class="card__title">{{ tour.title }}</h3>
+          <p class="card__meta">{{ tour.region }} · {{ tour.days }} дн.</p>
+          <div class="card__price">{{ formatPrice(tour.price) }} ₽</div>
+        </div>
+      </article>
+      <p v-if="filtered.length === 0" class="empty">Ничего не найдено</p>
+    </div>
+  </main>
+
+  <script src="js/app-vue.js"></script>
+</body>
+</html>

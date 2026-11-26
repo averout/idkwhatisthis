@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список дел</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Список дел</h1>
+
+    <form id="task-form" class="form">
+      <input type="text" id="task-input" name="title" placeholder="Что нужно сделать?" autocomplete="off">
+      <button type="submit" id="add-button">Добавить</button>
+    </form>
+
+    <p id="error" class="error" hidden>Введите название задачи</p>
+
+    <ul id="task-list" class="list"></ul>
+
+    <p class="counter">Всего задач: <span id="counter">0</span>, выполнено: <span id="done-counter">0</span></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

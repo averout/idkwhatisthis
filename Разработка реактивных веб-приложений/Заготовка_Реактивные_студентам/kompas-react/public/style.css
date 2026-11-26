@@ -1,0 +1,108 @@
+/* Стили «Компас: подбор тура». Изменять не нужно. */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #24211d;
+  background-color: #f4f1ec;
+}
+
+/* Шапка */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 30px;
+  color: #fff;
+  background-color: #1f5c8a;
+}
+.logo { font-size: 26px; font-weight: bold; letter-spacing: 3px; }
+.logo span { margin-left: 10px; font-size: 14px; font-weight: normal; letter-spacing: 0; color: #cfe0ee; }
+.badge {
+  padding: 6px 14px;
+  font-weight: bold;
+  color: #1f5c8a;
+  background: #fff;
+  border-radius: 999px;
+}
+
+/* Основная часть: каталог слева, корзина справа */
+.page {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+@media (max-width: 800px) {
+  .page { grid-template-columns: 1fr; }
+}
+h1, h2 { margin: 0 0 14px; }
+
+/* Учебный блок шага 2 */
+.demo {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e5ded3;
+  border-radius: 12px;
+}
+.demo input { padding: 8px 10px; font: inherit; border: 1px solid #cfc5b5; border-radius: 8px; }
+
+/* Каталог */
+.filters { margin-bottom: 14px; }
+.filters select { padding: 8px 10px; font: inherit; border: 1px solid #cfc5b5; border-radius: 8px; }
+.list { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.card { overflow: hidden; background: #fff; border: 1px solid #e5ded3; border-radius: 12px; }
+.card img { display: block; width: 100%; height: auto; }
+.card__body { padding: 10px 12px 12px; }
+.card__title { margin: 0 0 4px; font-size: 16px; }
+.card__meta { margin: 0 0 8px; font-size: 13px; color: #7b736a; }
+.card__price { margin-bottom: 10px; font-size: 18px; font-weight: bold; color: #c2410c; }
+
+.button {
+  padding: 8px 16px;
+  font: inherit;
+  font-weight: bold;
+  color: #fff;
+  background-color: #c2410c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button:disabled { color: #7b736a; background-color: #e5ded3; cursor: default; }
+
+/* Корзина */
+.cart {
+  align-self: start;
+  position: sticky;
+  top: 20px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e5ded3;
+  border-radius: 12px;
+}
+.cart__empty { color: #7b736a; }
+.cart__item { padding: 10px 0; border-bottom: 1px solid #eee5d8; }
+.cart__title { font-weight: bold; }
+.cart__row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 6px; }
+.counter { display: flex; align-items: center; gap: 8px; }
+.counter button, .remove {
+  width: 30px;
+  height: 30px;
+  font: inherit;
+  background: #fff;
+  border: 1px solid #cfc5b5;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.remove { width: auto; padding: 0 10px; font-size: 13px; }
+.cart__total { margin-top: 12px; font-size: 18px; font-weight: bold; }
+.cart__discount { color: #2f7d5b; }
+.promo { display: flex; gap: 8px; margin-top: 12px; }
+.promo input { flex: 1; min-width: 0; padding: 8px 10px; font: inherit; border: 1px solid #cfc5b5; border-radius: 8px; }
+.promo__message { margin: 6px 0 0; font-size: 14px; }
+.ok { color: #2f7d5b; }
+.bad { color: #c0392b; }

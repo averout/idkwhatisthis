@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "title": "Горный Алтай: Телецкое озеро",
+    "region": "Сибирь",
+    "days": 5,
+    "price": 18900,
+    "imageSmall": "img/small/tour1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Байкал зимой",
+    "region": "Сибирь",
+    "days": 6,
+    "price": 32500,
+    "imageSmall": "img/small/tour2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Казань за два дня",
+    "region": "Поволжье",
+    "days": 2,
+    "price": 7400,
+    "imageSmall": "img/small/tour3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Карелия: Кивач и Рускеала",
+    "region": "Север",
+    "days": 3,
+    "price": 14200,
+    "imageSmall": "img/small/tour4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Эльбрус и Приэльбрусье",
+    "region": "Юг",
+    "days": 6,
+    "price": 27800,
+    "imageSmall": "img/small/tour5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Камчатка: вулканы и гейзеры",
+    "region": "Дальний Восток",
+    "days": 8,
+    "price": 89000,
+    "imageSmall": "img/small/tour6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Крым: Ялта и Ласточкино гнездо",
+    "region": "Юг",
+    "days": 5,
+    "price": 21500,
+    "imageSmall": "img/small/tour7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Уральские горы: Таганай",
+    "region": "Урал",
+    "days": 3,
+    "price": 11900,
+    "imageSmall": "img/small/tour8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Алтай: Чуйский тракт",
+    "region": "Сибирь",
+    "days": 7,
+    "price": 26400,
+    "imageSmall": "img/small/tour1.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Ольхон и Малое море",
+    "region": "Сибирь",
+    "days": 4,
+    "price": 19800,
+    "imageSmall": "img/small/tour2.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Самара и Жигули",
+    "region": "Поволжье",
+    "days": 2,
+    "price": 6900,
+    "imageSmall": "img/small/tour3.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Соловецкие острова",
+    "region": "Север",
+    "days": 4,
+    "price": 23700,
+    "imageSmall": "img/small/tour4.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Домбай: горные озёра",
+    "region": "Юг",
+    "days": 5,
+    "price": 24300,
+    "imageSmall": "img/small/tour5.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Владивосток и остров Русский",
+    "region": "Дальний Восток",
+    "days": 5,
+    "price": 48500,
+    "imageSmall": "img/small/tour6.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Севастополь: история и море",
+    "region": "Юг",
+    "days": 4,
+    "price": 17600,
+    "imageSmall": "img/small/tour7.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Екатеринбург и Невьянск",
+    "region": "Урал",
+    "days": 2,
+    "price": 8900,
+    "imageSmall": "img/small/tour8.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Белуха: треккинг",
+    "region": "Сибирь",
+    "days": 9,
+    "price": 41200,
+    "imageSmall": "img/small/tour1.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Байкальская кругосветка",
+    "region": "Сибирь",
+    "days": 3,
+    "price": 15400,
+    "imageSmall": "img/small/tour2.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Нижний Новгород и Городец",
+    "region": "Поволжье",
+    "days": 2,
+    "price": 8100,
+    "imageSmall": "img/small/tour3.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Мурманск: северное сияние",
+    "region": "Север",
+    "days": 4,
+    "price": 29900,
+    "imageSmall": "img/small/tour4.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Кавказские Минеральные Воды",
+    "region": "Юг",
+    "days": 6,
+    "price": 22800,
+    "imageSmall": "img/small/tour5.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Сахалин: маяк Анива",
+    "region": "Дальний Восток",
+    "days": 6,
+    "price": 61000,
+    "imageSmall": "img/small/tour6.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Бахчисарай и пещерные города",
+    "region": "Юг",
+    "days": 3,
+    "price": 12500,
+    "imageSmall": "img/small/tour7.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Красноярские Столбы",
+    "region": "Сибирь",
+    "days": 3,
+    "price": 13700,
+    "imageSmall": "img/small/tour8.jpg"
+  }
+]

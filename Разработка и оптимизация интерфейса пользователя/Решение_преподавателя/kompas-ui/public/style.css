@@ -1,0 +1,168 @@
+/* Стили каталога туров. Раздел «АДАПТИВНОСТЬ» в конце вы допишете на шаге 9 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #24211d;
+  background-color: #f4f1ec;
+}
+
+.header {
+  padding: 16px 30px;
+  color: #ffffff;
+  background-color: #1f5c8a;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.logo span {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0;
+  color: #cfe0ee;
+}
+
+/* Основная часть страницы: ширина задана жёстко в пикселях */
+.page {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0 0 16px;
+}
+
+/* Панель фильтров: элементы в одну строку */
+.filters {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filters input[type="text"],
+.filters select {
+  padding: 9px 12px;
+  font: inherit;
+  border: 1px solid #cfc5b5;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.filters input[type="text"] {
+  width: 320px;
+}
+
+.count {
+  color: #7b736a;
+}
+
+/* Сетка карточек: ровно 4 колонки по 260 пикселей */
+.list {
+  display: grid;
+  grid-template-columns: 260px 260px 260px 260px;
+  gap: 20px;
+}
+
+.card {
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #e5ded3;
+  border-radius: 12px;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;   /* высота — по пропорциям картинки */
+}
+
+.card__body {
+  padding: 12px 14px 14px;
+}
+
+.card__title {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+.card__meta {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #7b736a;
+}
+
+.card__price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #c2410c;
+}
+
+.empty {
+  padding: 30px;
+  text-align: center;
+  color: #7b736a;
+}
+
+/* Кнопка виджета консультанта (её создаёт js/old-widget.js) */
+.chat-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 12px 18px;
+  font: inherit;
+  color: #ffffff;
+  background-color: #2f7d5b;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ===================== АДАПТИВНОСТЬ ===================== */
+
+/* Ширина страницы: не больше 1100px, а на узком экране — по ширине экрана */
+.page {
+  width: auto;
+  max-width: 1100px;
+}
+
+/* Сетка: столько колонок, сколько помещается, но каждая не уже 240px */
+.list {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+/* Экран уже 600px (телефон) */
+@media (max-width: 600px) {
+  .header {
+    padding: 12px 16px;
+  }
+
+  .logo span {
+    display: block;
+    margin: 4px 0 0;
+  }
+
+  .page {
+    padding: 12px;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters input[type="text"] {
+    width: 100%;
+  }
+}
