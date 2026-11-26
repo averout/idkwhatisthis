@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Компас — отзывы туристов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">КОМПАС <span>отзывы туристов</span></div>
+  </header>
+
+  <main class="page">
+    <h1>Оставить отзыв о поездке</h1>
+
+    <form id="form" class="form">
+      <label class="field">Ваше имя
+        <input id="name" type="text" maxlength="50" placeholder="Анна">
+      </label>
+      <label class="field">Отзыв
+        <textarea id="text" rows="3" maxlength="1000" placeholder="Как прошла поездка?"></textarea>
+      </label>
+
+      <div class="block">
+        <p class="block__title">Фотографии (до 6, каждая не больше 10 МБ)</p>
+        <input id="photos" type="file" multiple accept="image/jpeg,image/png,image/webp">
+        <div id="preview" class="preview"></div>
+      </div>
+
+      <div class="block">
+        <p class="block__title">Видео (необязательно, до 20 секунд)</p>
+        <input id="video" type="file" accept="video/mp4,video/webm">
+        <div id="videoBox"></div>
+      </div>
+
+      <button type="submit" class="button">Опубликовать отзыв</button>
+      <p id="status" class="status"></p>
+    </form>
+
+    <h2>Отзывы</h2>
+    <div id="reviews" class="reviews"></div>
+  </main>
+
+  <!-- Наш код. Файл js/upload.js вы создадите сами (шаг 2) -->
+  <script src="js/upload.js"></script>
+</body>
+</html>

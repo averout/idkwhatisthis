@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог техники — практика по оптимизации</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="banner">
+    <span class="banner__text">Распродажа недели: скидки до 40 %</span>
+  </div>
+
+  <header class="header">
+    <h1 class="header__title">Каталог техники</h1>
+    <input class="search" id="search" type="text" placeholder="Поиск товара">
+    <p class="count" id="count">Найдено товаров: 0</p>
+  </header>
+
+  <section class="stats">
+    <h2 class="stats__title">Измерения</h2>
+    <div id="stats"></div>
+  </section>
+
+  <main class="list" id="list"></main>
+
+  <script src="data.js"></script>
+  <script src="slow.js"></script>
+</body>
+</html>

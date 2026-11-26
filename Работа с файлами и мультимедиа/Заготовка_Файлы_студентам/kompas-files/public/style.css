@@ -1,0 +1,80 @@
+/* Стили страницы отзывов. Изменять не нужно. */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #24211d;
+  background-color: #f4f1ec;
+}
+
+.header { padding: 16px 30px; color: #fff; background-color: #1f5c8a; }
+.logo { font-size: 26px; font-weight: bold; letter-spacing: 3px; }
+.logo span { margin-left: 10px; font-size: 14px; font-weight: normal; letter-spacing: 0; color: #cfe0ee; }
+
+.page { max-width: 900px; margin: 0 auto; padding: 20px; }
+h1 { margin: 0 0 16px; }
+h2 { margin: 30px 0 12px; }
+
+.form {
+  display: grid;
+  gap: 14px;
+  padding: 18px 20px;
+  background-color: #fff;
+  border: 1px solid #e5ded3;
+  border-radius: 12px;
+}
+.field { display: grid; gap: 4px; font-size: 14px; color: #6b645c; }
+.field input, .field textarea {
+  padding: 9px 12px;
+  font: inherit;
+  color: #24211d;
+  border: 1px solid #cfc5b5;
+  border-radius: 8px;
+}
+.block { padding: 12px 14px; border: 1px dashed #cfc5b5; border-radius: 10px; background: #faf8f4; }
+.block__title { margin: 0 0 8px; font-weight: bold; }
+
+.preview { display: grid; gap: 10px; margin-top: 10px; }
+.photo {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 12px;
+  align-items: start;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #e5ded3;
+  border-radius: 10px;
+}
+.photo img { width: 120px; height: 90px; object-fit: cover; border-radius: 6px; background: #eee; }
+.photo__name { font-weight: bold; word-break: break-all; }
+.photo__info { margin: 2px 0 0; font-size: 13px; color: #6b645c; }
+.photo--bad { border-color: #c0392b; background: #fdf1ef; }
+.error { margin: 4px 0 0; font-weight: bold; color: #c0392b; }
+.small-button { padding: 4px 10px; font: inherit; font-size: 13px; background: #fff; border: 1px solid #cfc5b5; border-radius: 6px; cursor: pointer; }
+
+#videoBox video { width: 100%; max-width: 480px; margin-top: 10px; border-radius: 8px; background: #000; }
+
+.button {
+  justify-self: start;
+  padding: 10px 24px;
+  font: inherit;
+  font-weight: bold;
+  color: #fff;
+  background-color: #c2410c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button:disabled { opacity: 0.5; cursor: default; }
+.status { margin: 0; font-weight: bold; }
+
+.reviews { display: grid; gap: 14px; }
+.review { padding: 14px 16px; background: #fff; border: 1px solid #e5ded3; border-radius: 12px; }
+.review__name { margin: 0 0 6px; font-weight: bold; }
+.review__text { margin: 0 0 10px; }
+.review__photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; }
+.review__photos img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; }
+.review video { width: 100%; max-width: 480px; margin-top: 10px; border-radius: 8px; background: #000; }
+.empty { color: #7b736a; }
