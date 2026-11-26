@@ -1,0 +1,137 @@
+/* Стили сайта «Компас». Разделы «РАСКЛАДКА» и «УДОБСТВО НА ТЕЛЕФОНЕ» вы замените на шагах 2 и 3 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #24211d;
+  background-color: #f4f1ec;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.nav a,
+.phone {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.status {
+  color: #7b736a;
+}
+
+.card {
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #e5ded3;
+  border-radius: 12px;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card__body {
+  padding: 10px 12px 12px;
+}
+
+.card__title {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.card__meta {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: #7b736a;
+}
+
+.card__price {
+  font-weight: bold;
+  color: #c2410c;
+}
+
+.booking {
+  margin-top: 30px;
+  padding: 16px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e5ded3;
+  border-radius: 12px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #6b645c;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #c2410c;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: #7b736a;
+}
+
+/* ===================== РАСКЛАДКА (заменим на шаге 2) ===================== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  color: #ffffff;
+  background-color: #1f5c8a;
+}
+
+.nav a {
+  margin: 0 14px;
+  font-size: 14px;
+}
+
+.page {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 20px;
+}
+/* ===================== КОНЕЦ РАСКЛАДКИ ===================== */
+
+/* ============ УДОБСТВО НА ТЕЛЕФОНЕ (заменим на шаге 3) ============ */
+body {
+  font-size: 14px;
+}
+
+.form input {
+  width: 200px;
+  margin-left: 6px;
+  padding: 2px 4px;
+  font-size: 12px;
+}
+
+.button {
+  padding: 3px 10px;
+  font-size: 12px;
+}
+/* ============ КОНЕЦ РАЗДЕЛА ============ */

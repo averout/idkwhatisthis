@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Компас — туры по России</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">КОМПАС</div>
+    <nav class="nav">
+      <a href="#tours">Туры</a>
+      <a href="#booking">Заявка</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="phone" href="tel:+78462000000">+7 846 200-00-00</a>
+  </header>
+
+  <main class="page">
+    <h1 id="tours">Ближайшие туры</h1>
+    <p id="status" class="status"></p>
+    <div id="list" class="list"></div>
+
+    <section id="booking" class="booking">
+      <h2>Заявка на тур</h2>
+      <form class="form">
+        <label>Имя <input id="name" type="text" autocomplete="name"></label>
+        <label>Телефон <input id="phone" type="tel" autocomplete="tel" placeholder="+7 900 000-00-00"></label>
+        <label>Электронная почта <input id="email" type="email" autocomplete="email"></label>
+        <label>Сколько человек <input id="people" type="number" inputmode="numeric" min="1" max="16" value="1"></label>
+        <button type="submit" class="button">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contacts" class="footer">
+    Турбюро «Компас», г. Самара, ул. Ленинградская, 1
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

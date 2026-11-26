@@ -1,0 +1,192 @@
+/* Стили сайта «Компас». Разделы «РАСКЛАДКА» и «УДОБСТВО НА ТЕЛЕФОНЕ» вы замените на шагах 2 и 3 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #24211d;
+  background-color: #f4f1ec;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.nav a,
+.phone {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.status {
+  color: #7b736a;
+}
+
+.card {
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #e5ded3;
+  border-radius: 12px;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card__body {
+  padding: 10px 12px 12px;
+}
+
+.card__title {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.card__meta {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: #7b736a;
+}
+
+.card__price {
+  font-weight: bold;
+  color: #c2410c;
+}
+
+.booking {
+  margin-top: 30px;
+  padding: 16px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e5ded3;
+  border-radius: 12px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #6b645c;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #c2410c;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: #7b736a;
+}
+
+/* ===================== РАСКЛАДКА: сначала телефон ===================== */
+
+/* --- Базовые правила: для самого узкого экрана (телефон) --- */
+.header {
+  display: flex;
+  flex-wrap: wrap;               /* элементы переносятся на новую строку */
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 16px;
+  color: #ffffff;
+  background-color: #1f5c8a;
+}
+
+.nav {
+  order: 3;                      /* меню — последним, отдельной строкой */
+  display: flex;
+  width: 100%;
+  gap: 4px;
+}
+
+.nav a {
+  flex: 1;                       /* три пункта делят строку поровну */
+  padding: 10px 0;
+  font-size: 15px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+}
+
+.page {
+  max-width: 1000px;             /* не шире 1000px, но на телефоне — по ширине экрана */
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;    /* на телефоне — одна колонка */
+  gap: 16px;
+}
+
+/* --- Экран от 640px (большой телефон боком, планшет) --- */
+@media (min-width: 640px) {
+  .list {
+    grid-template-columns: 1fr 1fr;   /* две колонки */
+  }
+}
+
+/* --- Экран от 1000px (компьютер) --- */
+@media (min-width: 1000px) {
+  .header {
+    padding: 14px 40px;
+  }
+  .nav {
+    order: 0;                    /* меню возвращается в одну строку с логотипом */
+    width: auto;
+  }
+  .nav a {
+    flex: none;
+    padding: 6px 14px;
+    background-color: transparent;
+  }
+  .list {
+    grid-template-columns: 1fr 1fr 1fr;   /* три колонки */
+  }
+}
+/* ===================== КОНЕЦ РАСКЛАДКИ ===================== */
+
+/* ============ УДОБСТВО НА ТЕЛЕФОНЕ ============ */
+body {
+  font-size: 16px;               /* основной текст не мельче 16px */
+}
+
+.form label {
+  display: grid;                 /* подпись над полем */
+  gap: 4px;
+}
+
+.form input {
+  width: 100%;                   /* поле во всю ширину */
+  min-height: 44px;              /* удобно попасть пальцем */
+  padding: 8px 12px;
+  font-size: 16px;               /* не мельче 16px — иначе iPhone увеличивает страницу */
+  border: 1px solid #cfc5b5;
+  border-radius: 8px;
+}
+
+.button {
+  width: 100%;                   /* на телефоне — во всю ширину */
+  min-height: 48px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+@media (min-width: 640px) {
+  .button {
+    width: auto;
+    padding: 0 32px;
+  }
+}
+/* ============ КОНЕЦ РАЗДЕЛА ============ */
