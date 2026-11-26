@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Компас — Отчёт по аналитике</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">КОМПАС</a>
+    <nav><a href="report.html">Отчёт по аналитике</a></nav>
+  </header>
+  <main class="page">
+    <h1>Отчёт по посещаемости</h1>
+    <p class="text">Всего событий в журнале: <b id="total">…</b></p>
+
+    <!-- Сюда шаги 7 и 8 добавляют карточки с главными цифрами -->
+    <div class="kpis" id="kpis"></div>
+
+    <section class="block">
+      <h2>Воронка: от каталога до заявки</h2>
+      <div id="funnel"><p class="empty">Появится на шаге 8</p></div>
+    </section>
+
+    <section class="block">
+      <h2>Источники трафика</h2>
+      <div id="sources"><p class="empty">Появится на шаге 9</p></div>
+    </section>
+
+    <section class="block">
+      <h2>Устройства</h2>
+      <div id="devices"><p class="empty">Появится на шаге 9</p></div>
+    </section>
+
+    <section class="block">
+      <h2>Туры</h2>
+      <div id="tours"><p class="empty">Появится на шаге 9</p></div>
+    </section>
+  </main>
+
+  <!-- На странице отчёта счётчика нет: свои просмотры отчёта мы не считаем -->
+  <script src="js/report.js"></script>
+</body>
+</html>
